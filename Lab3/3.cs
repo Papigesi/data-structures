@@ -5,18 +5,20 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Iste
+namespace Lab3
 {
     class CityPair
     {
         public string[] cityNames;
         public int point;
+
         public CityPair()
         {
             cityNames = new string[2];
             point = 0;
         }
     }
+
     internal class Program
     {
         static void Main(string[] args)
@@ -29,6 +31,7 @@ namespace Iste
             listCities(combinationCities);
             Console.WriteLine();
             listIstanbul(combinationCities, "Istanbul");
+
             Console.ReadKey();
         }
 
